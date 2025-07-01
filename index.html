@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiv | Personal Portfolio</title>
+  <meta name="description" content="Shiv's personal portfolio: web developer, designer, and freelancer." />
+  <meta property="og:title" content="Shiv | Personal Portfolio" />
+  <meta property="og:description" content="Tech-Savvy Web Developer & Creative Designer. Explore my work, skills, and contact info." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="profile.jpg" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <header data-aos="fade-down">
+    <nav class="navbar glass" aria-label="Main navigation">
+      <div class="logo">Shiv</div>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="mode-toggle">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero" data-aos="fade-up">
+      <img src="profile.jpg" alt="Shiv's Profile" class="avatar" />
+      <h1>Shiv</h1>
+      <h2 class="animated-tagline"><span id="typed-text"></span><span class="cursor">|</span></h2>
+      <p>I'm a passionate and self-driven tech enthusiast with skills in web development, WordPress, UI design, Canva graphics, and Excel automation. I work from home and offer clean, fast, and reliable freelance services — no calls, just results.<br />I'm also the creative mind behind Namaste Kadi, and have hands-on experience with real client projects in web and digital branding.</p>
+      <a href="#contact" class="cta">Hire Me</a>
+      <a href="resume.pdf" class="cta secondary" download>Download Resume</a>
+    </section>
+    <section id="about" data-aos="fade-up" data-aos-delay="100">
+      <h2>About Me</h2>
+      <p>Hi, I'm Shiv, currently pursuing a Diploma in Computer Engineering in Gujarat, India.<br />I specialize in web design, WordPress setup, UI design, and automation with tools like Excel. With practical experience in tech stacks like Laravel, Django, and Python, I build websites, apps, and digital products that solve real-world problems.<br />I've worked on educational platforms, content packs, and custom websites — all delivered with clarity and precision, without the need for voice or video calls.</p>
+      <ul>
+        <li>Hospital website during an internship</li>
+        <li>Hackathon-winning project</li>
+        <li>NASA HERC Program</li>
+        <li>Local businesses</li>
+        <li>Social media pages</li>
+      </ul>
+    </section>
+    <section id="skills" data-aos="fade-up" data-aos-delay="200">
+      <h2>Skills</h2>
+      <p class="skills-intro">A quick look at my core strengths in web, design, and automation.</p>
+      <div class="skills-card-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, Laravel, Django, WordPress<br><span class="skill-note">Building modern, responsive websites and apps.</span></p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Design & UI</h3>
+          <p>UI Design, Canva, Social Media Kits<br><span class="skill-note">Crafting clean, creative, and user-focused designs.</span></p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>Automation</h3>
+          <p>Excel Automation, PDF/Word Conversion<br><span class="skill-note">Automating reports, data, and workflows for efficiency.</span></p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Productivity</h3>
+          <p>Data Entry, Fast Typing, Arduino<br><span class="skill-note">Delivering results quickly with attention to detail.</span></p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" data-aos="fade-up" data-aos-delay="400">
+      <h2>Contact Me</h2>
+      <div class="contact-icons">
+        <a href="mailto:pandyashiv0867@gmail.com" aria-label="Email" class="contact-icon"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/916353287918" target="_blank" aria-label="WhatsApp" class="contact-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/pandya_shiv_" target="_blank" aria-label="Instagram" class="contact-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="resume.pdf" class="contact-icon" aria-label="Download Resume" download><i class="fa-solid fa-file-arrow-down"></i></a>
+      </div>
+      <form class="contact-form" id="contact-form" autocomplete="off" novalidate>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <div class="form-message" id="form-message" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Shiv. All rights reserved.</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 800 });</script>
+</body>
+</html> 
